@@ -149,6 +149,13 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -156,6 +163,16 @@ nav h1 a {
   text-align: center;
 }
 #restaurants-list li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
