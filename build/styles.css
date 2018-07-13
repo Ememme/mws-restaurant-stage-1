@@ -404,12 +404,14 @@ nav h1 a {
     height: 400px;
   }
   .inside #map {
+    position: static;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
     width: 100%;
   }
   .inside #footer {
+    position: static;
     width: 100%;
   }
   #restaurant-container {
@@ -437,6 +439,7 @@ nav h1 a {
     -ms-flex-order: 3;
     order: 3;
     width: 100%;
+    padding: 10px 5px;
   }
   #restaurants-list li {
     width: 100%;
