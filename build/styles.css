@@ -349,7 +349,30 @@ nav h1 a {
 }
 
 #reviews-list li p {
-  margin: 0 0 10px;
+  /* margin: 0 0 10px; */
+}
+
+#reviews-list li p:nth-child(1) {
+	background: #252831;
+	color: #fff;
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-size: 1.2rem;
+	text-align: left;
+}
+#reviews-list li p:nth-child(2) {
+	padding: 5px 13px;
+	text-align: right;
+}
+#reviews-list li p:nth-child(3) {
+  text-transform: uppercase;
+  display: inline;
+  background-color: #f58500;
+  color: #fff;
+  font-weight: bolder;
+  padding: 5px 10px 5px;
 }
 
 #restaurant-hours td {
@@ -421,6 +444,11 @@ nav h1 a {
   #reviews-list li {
     width: 100%;
     margin: 20px 0;
+  }
+
+  #reviews-list li p:nth-child(3) {
+    text-transform: uppercase;
+    background-color: #f58500;
   }
 }
 
