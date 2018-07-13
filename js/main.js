@@ -199,6 +199,16 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 
 }
+// Register service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw/index.js').then(function(registration) {
+    // Registration was successful
+    console.log('Service worker registration succeeded:', registration);
+  }).catch(function(error) {
+    // Registration failed
+    console.log('Service worker registration failed:', error);
+  });
+}
 /* addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
