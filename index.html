@@ -18,7 +18,7 @@
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" aria-label="Map with restaurants location" role="application"></div>
     </section>
     <section>
       <div class="filter-options">
@@ -26,7 +26,7 @@
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="Filter restaurants by neighbourhood">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-label="Filter restaurants by cuisine">
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-label="Dropdown menu: filter by cuisine" role="listbox">
           <option value="all">All Cuisines</option>
         </select>
       </div>
