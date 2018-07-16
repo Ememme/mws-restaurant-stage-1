@@ -56,6 +56,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+
 }
 
 #footer {
@@ -219,7 +222,7 @@ nav h1 a {
   min-width: 100%;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial, sans-serif;
   font-size: 14pt;
@@ -291,7 +294,7 @@ nav h1 a {
 }
 
 #restaurant-img {
-  width: 90%;
+  width: 100%;
 }
 
 #restaurant-address {
@@ -309,12 +312,13 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-  width: 90%;
+  width: 100%;
 }
 
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
+
   padding: 140px 40px 30px;
   width: 50%;
 }
@@ -404,10 +408,10 @@ nav h1 a {
     right: 0;
     top: 185px;
     width: 100%;
-    height: 400px;
+    height: 300px;
   }
   .inside #map {
-    height: 400px;
+    height: 300px;
     width: 100%;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
@@ -432,10 +436,18 @@ nav h1 a {
     -ms-flex-order: 2;
     order: 2;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 425px;
   }
   #restaurant-name {
     padding-top: 3px;
+  }
+
+  #restaurant-address {
+    font-weight: bolder;
+    text-align: center;
+  }
+  #restaurant-hours {
+    text-align: center;
   }
   #reviews-container {
     -webkit-box-ordinal-group: 4;
@@ -443,6 +455,10 @@ nav h1 a {
     order: 3;
     width: 100%;
     padding: 10px 5px;
+  }
+  #reviews-container h2 {
+    text-align: center;
+    text-transform: uppercase;
   }
   #restaurants-list li {
     width: 100%;
@@ -474,6 +490,7 @@ nav h1 a {
   #reviews-container {
     width: 60%;
   }
+
 }
 
 /*  --LARGE--*/
