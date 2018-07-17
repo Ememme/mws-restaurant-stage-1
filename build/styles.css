@@ -474,9 +474,17 @@ nav h1 a {
 /* --MEDIUM-- */
 
 @media screen and (min-width: 701px) {
-  #breadcrumb {
-    width: 50%;
+  .inside #breadcrumb {
+    width: 100%;
+    text-align: left;
   }
+
+  #map.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+    position:  absolute;
+    top: 55px;
+  }
+
+
   #restaurants-list li {
     width: 45%;
     padding: 10px;
